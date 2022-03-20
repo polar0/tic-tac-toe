@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="./main.js" defer></script>
+
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div id="blur-container" class="blur" style="z-index: 1"></div>
+    <div class="container">
+      <div class="ui">
+        <div class="player-a"><span></span><span class="number"></span></div>
+        <div class="turn">
+          Turn :
+          <div class="turn-value number">0</div>
+        </div>
+        <div class="player-b"><span></span><span class="number"></span></div>
+      </div>
+      <div id="board">
+        <div class="board-box" value="0"></div>
+        <div class="board-box" value="1"></div>
+        <div class="board-box" value="2"></div>
+        <div class="board-box" value="3"></div>
+        <div class="board-box" value="4"></div>
+        <div class="board-box" value="5"></div>
+        <div class="board-box" value="6"></div>
+        <div class="board-box" value="7"></div>
+        <div class="board-box" value="8"></div>
+      </div>
+    </div>
+    <div class="player-identity">
+      <form novalidate>
+        <div class="player-a">
+          <div class="title">Player A</div>
+          <label for="player-a-name">Name</label>
+          <input
+            type="text"
+            name="player-a-name"
+            id="player-a-name"
+            maxlength="20"
+            placeholder="Player A"
+          />
+          <label for="player-a-sign">Sign</label>
+          <input
+            type="text"
+            name="player-a-sign"
+            id="player-a-sign"
+            minlength="1"
+            maxlength="1"
+            placeholder="X"
+          />
+          <label for="player-a-color">Color</label>
+          <input
+            type="color"
+            name="player-a-color"
+            id="player-a-color"
+            value="#a64253"
+          />
+        </div>
+        <div class="player-b">
+          <div class="title">Player B</div>
+          <label for="player-b-name">Name</label>
+          <input
+            type="text"
+            name="player-b-name"
+            id="player-b-name"
+            maxlength="20"
+            placeholder="Player B"
+          />
+          <label for="player-b-sign">Sign</label>
+          <input
+            type="text"
+            name="player-b-sign"
+            id="player-b-sign"
+            minlength="1"
+            maxlength="1"
+            placeholder="Y"
+          />
+          <label for="player-b-color">Color</label>
+          <input
+            type="color"
+            name="player-b-color"
+            id="player-b-color"
+            value="#FBAF00"
+          />
+        </div>
+        <button type="button">Let's play!</button>
+      </form>
+    </div>
+    <div class="winner">
+      <span></span>
+      <button>Play again ?</button>
+    </div>
+  </body>
+</html>
