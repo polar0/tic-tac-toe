@@ -12,3 +12,5 @@ What was new ?
 - Using IIFE functions, keeping a cleaner global scope
 - Understanding private and public scope, operating with private and public variables, methods, functions
 - Using factory functions, classes and constructors, differenciating class and prototypal inheritance
+
+<a href="https://polar0.github.io/tic-tac-toe/">Live demo</a>
